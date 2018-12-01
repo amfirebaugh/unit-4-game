@@ -14,18 +14,18 @@ $(document).ready(function() {
 
     // Adding in sound effects as a bonus:
     var crystalClick = document.createElement("audio");
-    crystalClick.setAttribute("src", "../sounds/gem.mp3");
+    crystalClick.setAttribute("src", "./sounds/gem.mp3");
 
-    $('#magicImageGem').on('click', function() {
+    $("#redGem,#blueGem,#yellowGem,#greenGem").on("click", function() {
         crystalClick.play();
     });
 
     var winSound = document.createElement("audio");
-    winSound.setAttribute("src", "../sounds/win.mp3");
+    winSound.setAttribute("src", "./sounds/win.mp3");
 
     var lossSound = document.createElement("audio");
-    lossSound.setAttribute("src", "../sounds/loss.mp3");
-    
+    lossSound.setAttribute("src", "./sounds/loss.mp3");
+
 
     // reset the score on a page load
     $("#wins").text("Wins = " + wins);
@@ -60,15 +60,19 @@ $(document).ready(function() {
     // These push the randomly generated gem values into the currentScore array
     $("#redGem").on("click", function() {
         gamePlay(crystalArray[0]);
+        crystalClick.play();
     });
     $("#blueGem").on("click", function() {
         gamePlay(crystalArray[1]);
+        crystalClick.play();
     });
     $("#yellowGem").on("click", function() {
         gamePlay(crystalArray[2]);
+        crystalClick.play();
     });
     $("#greenGem").on("click", function() {
         gamePlay(crystalArray[3]);
+        crystalClick.play();
     });
     // red = 0, blue = 1, yellow = 2, green = 3
 
@@ -80,10 +84,12 @@ $(document).ready(function() {
             losses++;
             start();
             $("#losses").text("Losses: " + losses);
+            winSound.play();
         } else if (currentScore === ranNum) {
             wins++;
-            $("#wins").text("Wins: " + wins);
             start();
+            $("#wins").text("Wins: " + wins);
+            lossSound.play();
         }
     } // End gamePlay
 }); // End document.ready
