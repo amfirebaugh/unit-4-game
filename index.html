@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Page Title</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    
+    
+</head>
+<body>
+    <!-- <img id="background" src="assets/images/background.jpg"> -->
+    <!-- above works so I KNOW the picture works and the path is right...still not working in CSS though -->
+    <h1>Crystal Collector Game</h1>
+    <p>At the start of the game, a randomly generated number will appear below. There are four crystals that represent a random number each round. Each time you click on a crystal you add points to your current score. The goal is to match your current score to the random number each round. If you can match the random number you win that round, and if you go over the random number then you lose that round. Each round the value of each crystal changes. Good luck!
+    </p>
+    <div id="ranNumBox"></div>
+    <div id="winLossBox">
+        <div id="wins">testing</div>
+        <div id="losses"></div>
+    </div>
+    <div id="redGem">
+        <img src="assets/images/red.JPG" alt="red">
+    </div>
+    <div id="blueGem">
+        <img src="assets/images/blue.JPG" alt="blue">
+    </div>
+    <div id="yellowGem">
+        <img src="assets/images/yellow.JPG" alt="yellow">
+    </div>
+    <div id="greenGem">
+        <img src="assets/images/green.JPG" alt="green">
+    </div>
+    <div id="currentScore"></div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Javascript -->
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>

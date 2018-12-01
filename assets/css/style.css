@@ -1,0 +1,87 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    /* background: yellow; */
+    height: 100%;
+    /* width: 100%; */
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* not sure why my background image isn't working... the yellow color works...so what's up with my image? it shows up in inspect */
+
+h1 {
+    background: rgb(248, 149, 20);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+}
+
+p {
+    background: rgb(248, 149, 20);
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    margin: 10px;
+    width: 700px;
+    opacity: 0.6;
+}
+
+#ranNumBox {
+    background: rgb(248, 149, 20);
+    color: #22487e;
+    padding: 20px;
+    margin: 10px;
+    width: 70px;
+    height: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    
+    float: left;
+}
+
+#winLossBox {
+    background: rgb(248, 149, 20);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    float: left;
+}
+
+#wins, #losses {
+    margin-bottom: 10px;
+}
+
+#redGem, #blueGem, #greenGem, #yellowGem {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+
+#redGem {
+    clear: both;
+}
+
+#currentScore {
+    background: rgb(248, 149, 20);
+    color: #22487e;
+    height: 20px;
+    width: 240px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    clear: both;
+}
