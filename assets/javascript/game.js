@@ -13,19 +13,10 @@ $(document).ready(function() {
     // Two lines above were (old) attempts for trying to sum up an array to keep the currentScore counting on the page. I found a much better way, but I wanted to keep this for future reference since I spent time learning about the reduce function.
 
     // Adding in sound effects as a bonus:
-    var crystalClick = document.createElement("audio");
-    crystalClick.setAttribute("src", "./sounds/gem.mp3");
 
-    $("#redGem,#blueGem,#yellowGem,#greenGem").on("click", function() {
-        crystalClick.play();
-    });
-
-    var winSound = document.createElement("audio");
-    winSound.setAttribute("src", "./sounds/win.mp3");
-
-    var lossSound = document.createElement("audio");
-    lossSound.setAttribute("src", "./sounds/loss.mp3");
-
+    var crystalClick = new Audio("assets/sounds/gem.mp3");
+    var winSound = new Audio("assets/sounds/win.mp3");
+    var lossSound = new Audio("assets/sounds/loss.mp3");
 
     // reset the score on a page load
     $("#wins").text("Wins = " + wins);
