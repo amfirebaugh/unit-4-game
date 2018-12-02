@@ -15,8 +15,8 @@ $(document).ready(function() {
     // Adding in sound effects as a bonus:
 
     var crystalClick = new Audio("assets/sounds/gem.mp3");
-    var winSound = new Audio("assets/sounds/win.mp3");
-    var lossSound = new Audio("assets/sounds/loss.mp3");
+    var winSound = new Audio("assets/sounds/loss.mp3");
+    var lossSound = new Audio("assets/sounds/win.mp3");
 
     // reset the score on a page load
     $("#wins").text("Wins = " + wins);
