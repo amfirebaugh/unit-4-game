@@ -1,6 +1,6 @@
 # Crystal Collector Game
 
-This is a simply, yet fun and addicting math game for which the goal is to match your current score to the target number.
+This is a simple, yet fun and addicting math game for which the goal is to match your current score to the target number.
 
 [Play now!](https://amfirebaugh.github.io/unit-4-game/)
 
@@ -11,6 +11,8 @@ A target number between 19 and 120 is randomly generated and displayed. Four gem
 ### Technologies
 
 HTML, CSS, jQuery
+
+![screen shot of Crystal Collector](./crystal_collector_game.jpeg)
 
 ### Future Development
 
